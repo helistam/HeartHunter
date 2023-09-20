@@ -93,7 +93,7 @@
 ## 2.2 Интерфейс пользователя
 Окно входа в приложение.  
 
-![Окно входа в приложение]((https://github.com/helistam/HeartHunter/blob/main/images/Log%20in.png))  
+![Окно входа в приложение](https://github.com/helistam/HeartHunter/blob/main/images/Log%20in.png)  
 
 Окно регистрации нового пользователя.  
 
