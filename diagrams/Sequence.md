@@ -8,12 +8,12 @@
 
 ### 1. Вход в учётную запись<a name="1"></a>
 
-![Вход в учётную запись](https://github.com/DanutaGagua/Personal-film-collection-manager/blob/master/Diagrams/Images/SequenceDiagramSignIn.png)
+![Вход в учётную запись](https://github.com/helistam/HeartHunter/blob/main/diagrams/images/SequenceDiagramSignIn.png)
 
 ### 2. Регистрация в приложении<a name="2"></a>
 
-![Регистрация в приложении](https://github.com/DanutaGagua/Personal-film-collection-manager/blob/master/Diagrams/Images/SequenceDiagramSignIn.png)
+![Регистрация в приложении](https://github.com/helistam/HeartHunter/blob/main/diagrams/images/SequenceDiagramSignUp.png)
 
-### 3. Добавление фильма<a name="3"></a>
+### 3. Просмотр анкет<a name="3"></a>
 
-![Просмотр анкет](https://github.com/DanutaGagua/Personal-film-collection-manager/blob/master/Diagrams/Images/SequenceDiagramAddFilm.png)
+![Просмотр анкет](https://github.com/helistam/HeartHunter/blob/main/diagrams/images/SequenceDiagramAnketaChek.png)

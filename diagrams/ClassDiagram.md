@@ -1,6 +1,6 @@
 # Диаграмма классов
 
-![Диаграмма классов](https://github.com/DanutaGagua/Personal-film-collection-manager/blob/master/Diagrams/Images/ClassDiagram.png)
+![Диаграмма классов](https://github.com/helistam/HeartHunter/blob/main/diagrams/images/ClassDiagram.png)
 
 # Глоссарий
 

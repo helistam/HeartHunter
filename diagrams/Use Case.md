@@ -1,6 +1,6 @@
 # Диаграмма вариантов использования
 
-![Диаграмма вариантов использования](https://github.com/DanutaGagua/Personal-film-collection-manager/blob/master/Diagrams/Images/UseCase.png)
+![Диаграмма вариантов использования](https://github.com/helistam/HeartHunter/blob/main/diagrams/images/UseCase.png)
 
 # Глоссарий
 
