@@ -8,10 +8,10 @@
 
 ### 1. Вход в учётную запись<a name="1"></a>
 
-![Вход в учётную запись](https://github.com/helistam/HeartHunter/blob/main/diagrams/images/StateCheckSignIn.png)
+![Вход в учётную запись](https://github.com/helistam/HeartHunter/blob/main/diagrams/images/StateCheckReg.png)
 ### 2. Регистрация в приложении<a name="2"></a>
 
-![Регистрация в приложении](https://github.com/helistam/HeartHunter/blob/main/diagrams/images/StateChekReg.png)
+![Регистрация в приложении](https://github.com/helistam/HeartHunter/blob/main/diagrams/images/StateCheckReg.png)
 
 ### 3. Добавление фильма<a name="3"></a>
 
