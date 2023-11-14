@@ -1,4 +1,4 @@
-package com.example.herathunter
+package com.example.hearthunter
 
 import org.junit.Test
 

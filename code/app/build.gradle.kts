@@ -1,14 +1,16 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("org.springframework.boot")
+    id ("io.spring.dependency-management")
 }
 
 android {
-    namespace = "com.example.herathunter"
+    namespace = "com.example.hearthunter"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.herathunter"
+        applicationId = "com.example.hearthunter"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -44,7 +46,9 @@ android {
     }
     packaging {
         resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes +="META-INF/*"
+            excludes +="notice.txt"
+            excludes +="license.txt"
         }
     }
 }
@@ -52,7 +56,6 @@ android {
 dependencies {
 
     implementation ("androidx.navigation:navigation-compose:2.5.3")
-    //implementation ("androidx.navigation:navigation-compose:2.4.0-alpha08")
     implementation ("androidx.compose.material:material:1.0.3")
 
     implementation("androidx.core:core-ktx:1.9.0")
@@ -65,6 +68,11 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.ui:ui-android:1.5.2")
     implementation("com.google.android.engage:engage-core:1.3.0")
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

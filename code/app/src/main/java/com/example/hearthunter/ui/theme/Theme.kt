@@ -1,4 +1,4 @@
-package com.example.herathunter.ui.theme
+package com.example.hearthunter.ui.theme
 
 import android.app.Activity
 import android.os.Build

@@ -1,4 +1,4 @@
-package com.example.herathunter.ui.theme
+package com.example.hearthunter.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.example.herathunter.ui.theme
+package com.example.hearthunter.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

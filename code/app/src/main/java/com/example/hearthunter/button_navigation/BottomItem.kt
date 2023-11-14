@@ -1,4 +1,4 @@
-import com.example.herathunter.R
+import com.example.hearthunter.R
 
 sealed class BottomItem(val title: String, val iconId: Int, val route: String){
     object Screen1: BottomItem("Screen 1", R.drawable.icon, "screen_1")
