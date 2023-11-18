@@ -59,8 +59,8 @@ fun SwipeablePictureScreen(photos: List<Int>) {
     var currentPhotoIndex by remember { mutableStateOf(0) }
     var offsetX by remember { mutableStateOf(0f) }
 
-    val pictureWidth = 300.dp
-    val screenWidth = 400.dp
+    val pictureWidth = 1f.dp
+    val screenWidth = 1f.dp
 
     LazyColumn(
         modifier = Modifier
@@ -75,7 +75,7 @@ fun SwipeablePictureScreen(photos: List<Int>) {
                     .swipeable(
                         state = rememberSwipeableState(initialValue = offsetX),
                         anchors = mapOf(0f to 0f, (screenWidth - pictureWidth.value.dp).value to (screenWidth - pictureWidth.value.dp).value),
-                        thresholds = { _, _ -> FractionalThreshold(0.2f) },
+                        thresholds = { _, _ -> FractionalThreshold(0.05f) },
                         orientation = Orientation.Horizontal
                     )
                     .pointerInput(Unit) {
@@ -94,11 +94,10 @@ fun SwipeablePictureScreen(photos: List<Int>) {
                 Image(
                     painter = painterResource(id = photos[currentPhotoIndex]),
                     modifier = Modifier
-                        .fillMaxSize() // Задаем размеры изображения по размерам Box
-                        .background(Color.Green) // Цвет фона изображения
-                        .clip(RoundedCornerShape(8.dp)) // Пример закругленных углов
-                        .border(2.dp, Color.Blue), // Пример границы вокруг изображения
-                    contentScale = ContentScale.FillBounds, // Заполняет изображение в указанных границах
+                        .fillMaxSize()
+                        .background(Color.LightGray)
+                        .clip(RoundedCornerShape(8.dp)),
+                    contentScale = ContentScale.Fit,
                     contentDescription = null
                 )
             }
