@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="First_Name">#DDDDDD</color>
     <color name="black">#FF000000</color>
+    <color name="colorAccent">#C58BF2</color>
+    <color name="colorGray">#7B6F72</color>
+    <color name="colorPrimary">#92A3FD</color>
+    <color name="colorSecondary">#9DCEFF</color>
+    <color name="colorText">#1D1617</color>
+    <color name="colorWhite">#FFFFFFFF</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -8,5 +15,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">HeratHunter</string>
+    <string name="create_account">Create an Account</string>
+    <string name="email">Email</string>
+    <string name="first_name">First Name</string>
+    <string name="go_to_login">Already have an account? Login</string>
+    <string name="hello">Hey there</string>
+    <string name="hide_password">Hide  password</string>
+    <string name="last_name">Last Name</string>
+    <string name="login">Log In</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="show_password">Show  password</string>
+    <string name="terms_and_conditions">By continuing you accept our Privacy Policy and Term of Use</string>
+    <string name="welcome">Welcome Back</string>
     <style name="Theme.HeratHunter" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>
