@@ -24,6 +24,7 @@ import com.example.herathunter.components.HeadingTextComponent
 import com.example.herathunter.components.MyTextFieldComponent
 import com.example.herathunter.components.NormalTextComponent
 import com.example.herathunter.components.PasswordTextFieldComponent
+import com.example.herathunter.components.PhotoButton
 
 @Composable
 fun SignUpScreen() {
@@ -54,11 +55,13 @@ fun SignUpScreen() {
                 labelValue= stringResource(id = R.string.password),
                 painterResource(id = R.drawable.lock)
             )
-            
+            Spacer(modifier = Modifier.height(20.dp))
+            PhotoButton(value= "Upload photo")
             CheckboxComponent(value = stringResource(id =R.string.terms_and_conditions ) )
             
             Spacer(modifier = Modifier.height(80.dp))
             ButtonComponent(value= stringResource(id = R.string.register))
+
             Spacer(modifier = Modifier.height(40.dp))
             DividerTextComponent()
             ClickableLoginTextComponent(tryingToLogin = true,onTextSelected={

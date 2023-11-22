@@ -36,12 +36,20 @@
         "source": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-4:\\drawable_heart.png.flat",
+        "source": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-6:\\drawable\\heart.png"
+    },
+    {
         "merged": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-4:\\mipmap-xxxhdpi_email.webp.flat",
         "source": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-6:\\mipmap-xxxhdpi\\email.webp"
+    },
+    {
+        "merged": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-4:\\drawable_pic4.jpg.flat",
+        "source": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-6:\\drawable\\pic4.jpg"
     },
     {
         "merged": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-4:\\drawable_icon2.xml.flat",
@@ -124,8 +132,8 @@
         "source": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-6:\\drawable\\icon.xml"
     },
     {
-        "merged": "com.example.herathunter.app-merged_res-4:/drawable_pic4.jpg.flat",
-        "source": "com.example.herathunter.app-main-6:/drawable/pic4.jpg"
+        "merged": "com.example.herathunter.app-merged_res-4:/drawable_dheart.png.flat",
+        "source": "com.example.herathunter.app-main-6:/drawable/dheart.png"
     },
     {
         "merged": "D:\\3term\\rubbish\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-4:\\mipmap-mdpi_email.webp.flat",

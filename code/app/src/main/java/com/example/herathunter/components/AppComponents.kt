@@ -211,7 +211,38 @@ fun CheckboxComponent(value: String){
         )
     }
 }
-
+@Composable
+fun PhotoButton(value: String){
+    Button(onClick = { PostOfficeAppRouter.navigateTo(Screen.MainScreen)},
+        modifier= Modifier
+            .fillMaxWidth()
+            .heightIn(48.dp),
+        contentPadding= PaddingValues(),
+        colors=ButtonDefaults.buttonColors(Color.Blue)
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(48.dp)
+                .background(
+                    brush = Brush.horizontalGradient(
+                        listOf(
+                            Color.Red,
+                            Color.Yellow
+                        )
+                    ),
+                    shape = RoundedCornerShape(50.dp)
+                ),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(
+                text = value,
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold
+            )
+        }
+    }
+}
 @Composable
 fun ButtonComponent(value: String){
     Button(onClick = { PostOfficeAppRouter.navigateTo(Screen.MainScreen)},

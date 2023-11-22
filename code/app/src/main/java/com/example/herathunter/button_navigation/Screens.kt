@@ -1,4 +1,7 @@
+import android.annotation.SuppressLint
 import android.util.Log
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -6,6 +9,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.Orientation
 import androidx.compose.foundation.gestures.detectHorizontalDragGestures
+import androidx.compose.foundation.gestures.detectTransformGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -19,6 +23,11 @@ import androidx.compose.material.FractionalThreshold
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.TextField
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.FilterVintage
+import androidx.compose.material.icons.filled.HeartBroken
+import androidx.compose.material.icons.filled.SupervisedUserCircle
 import androidx.compose.material.rememberSwipeableState
 import androidx.compose.material.swipeable
 import androidx.compose.material3.*
@@ -26,7 +35,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -49,68 +60,135 @@ fun Screen1() {
             .background(Color.White)
             .padding(28.dp)
     ){
-        val photos = listOf(R.drawable.photo1, R.drawable.pic4, R.drawable.photo1)
-        SwipeablePictureScreen(photos)
+        val photos = listOf(R.drawable.photo1, R.drawable.pic4, R.drawable.photo1,R.drawable.pic4)
+        val names=listOf("NEGR1 возраст негра \n Описние негра ","Ne Negr", "Negr2", "Ne Negr2")
+        SwipeablePhotos(photos,names)
+        //SwipeablePictureScreen(photos)
     }
 }
-@OptIn(ExperimentalMaterialApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
+@SuppressLint("RememberReturnType")
 @Composable
-fun SwipeablePictureScreen(photos: List<Int>) {
+fun SwipeablePhotos(photos: List<Int>, names: List<String>) {
     var currentPhotoIndex by remember { mutableStateOf(0) }
     var offsetX by remember { mutableStateOf(0f) }
 
-    val pictureWidth = 300.dp
-    val screenWidth = 400.dp
-
-    LazyColumn(
+    Column(
         modifier = Modifier
             .fillMaxSize()
+            .padding(5.dp)
     ) {
-        item {
-            // Picture in the middle that can be swiped
-            Box(
-                modifier = Modifier
-                    .fillParentMaxSize()
-                    .background(Color.Red)
-                    .swipeable(
-                        state = rememberSwipeableState(initialValue = offsetX),
-                        anchors = mapOf(0f to 0f, (screenWidth - pictureWidth.value.dp).value to (screenWidth - pictureWidth.value.dp).value),
-                        thresholds = { _, _ -> FractionalThreshold(0.2f) },
-                        orientation = Orientation.Horizontal
-                    )
-                    .pointerInput(Unit) {
-                        detectHorizontalDragGestures { _, dragAmount ->
-                            val newIndex = currentPhotoIndex - (dragAmount.dp / pictureWidth).roundToInt()
-                            val newOffsetX = screenWidth.value * newIndex.toFloat()
-                            if (newIndex in photos.indices &&
-                                newOffsetX >= 0 &&
-                                newOffsetX <= (photos.size - 1) * screenWidth.value) {
-                                currentPhotoIndex = newIndex
-                                offsetX = newOffsetX
+        // TopAppBar with buttons
+        TopAppBar(
+            title = {
+
+            },
+            navigationIcon = {
+                // You can add a navigation icon or leave it empty
+            },
+            actions = {
+                Row(
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(8.dp) // Adjust the overall padding
+                ) {
+                    IconButton(onClick = {
+                        // Handle button click
+                    }) {
+                        Icon(
+                            painter = painterResource(id = R.drawable.heart),
+                            contentDescription = null,
+                            tint = Color.Red // Set the desired color
+                        )
+                    }
+                    Spacer(modifier = Modifier.width(8.dp)) // Adjust the spacing between icons
+                    IconButton(onClick = {
+                        // Handle button click
+                    }) {
+                        Icon(
+                            imageVector = Icons.Default.HeartBroken,
+                            contentDescription = null,
+                            tint = Color.Green // Set the desired color
+                        )
+                    }
+                    Spacer(modifier = Modifier.width(8.dp)) // Adjust the spacing between icons
+                    IconButton(onClick = {
+                        // Handle button click
+                    }) {
+                        Icon(
+                            imageVector = Icons.Default.FilterVintage,
+                            contentDescription = null,
+                            tint = Color.Blue // Set the desired color
+                        )
+                    }
+                    Spacer(modifier = Modifier.width(8.dp)) // Adjust the spacing between icons
+                    IconButton(onClick = {
+                        // Handle button click
+                    }) {
+                        Icon(
+                            painter = painterResource(id = R.drawable.dheart),
+                            contentDescription = null,
+                            tint = Color.Magenta // Set the desired color
+                        )
+                    }
+                }
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(0.dp)
+                .height(50.dp) // Set the desired height
+        )
+
+        // Swipeable photos content
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .pointerInput(Unit) {
+                    detectTransformGestures { _, pan, _, _ ->
+                        if (pan.x > 0) {
+                            // Swipe to the right
+                            offsetX += pan.x
+                            if (offsetX > 200) {
+                                currentPhotoIndex = (currentPhotoIndex + 1) % photos.size
+                                offsetX = 0f
+                            }
+                        } else if (pan.x < 0) {
+                            // Swipe to the left
+                            offsetX += pan.x
+                            if (offsetX < -200) {
+                                currentPhotoIndex = (currentPhotoIndex - 1 + photos.size) % photos.size
+                                offsetX = 0f
                             }
                         }
                     }
+                }
+        ) {
+            Image(
+                painter = painterResource(id = photos[currentPhotoIndex]),
+                contentDescription = null,
+                modifier = Modifier
+                    .fillMaxSize()
+                    .height(300.dp)
+                    .background(MaterialTheme.colorScheme.primary)
+                    .offset(x = offsetX.dp),
+                contentScale = ContentScale.FillBounds
+            )
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(18.dp),
+                contentAlignment = Alignment.BottomStart
             ) {
-                Image(
-                    painter = painterResource(id = photos[currentPhotoIndex]),
-                    modifier = Modifier
-                        .fillMaxSize() // Задаем размеры изображения по размерам Box
-                        .background(Color.Green) // Цвет фона изображения
-                        .clip(RoundedCornerShape(8.dp)) // Пример закругленных углов
-                        .border(2.dp, Color.Blue), // Пример границы вокруг изображения
-                    contentScale = ContentScale.FillBounds, // Заполняет изображение в указанных границах
-                    contentDescription = null
+                Text(
+                    text = names[currentPhotoIndex],
+                    color = Color.Black,
+                    style = TextStyle(fontWeight = FontWeight.Bold, fontSize = 30.sp)
                 )
             }
         }
     }
 }
-@Composable
-fun PhotoSlider(photos: List<Int>){
-
-}
-
-
 
 @Composable
 fun Screen2() {
