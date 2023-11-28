@@ -111,7 +111,7 @@
 
 ## Представление результатов
 
-Результаты представлены  в документе ["Результаты тестирования"](https://github.com/DanutaGagua/Personal-film-collection-manager/blob/master/Test%20results.md).
+Результаты представлены  в документе ["Результаты тестирования"](https://github.com/helistam/HeartHunter/blob/main/testing/Test%20Result.md).
 
 <a name="conclusion"/>
 
