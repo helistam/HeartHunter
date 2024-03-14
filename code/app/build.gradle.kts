@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("org.springframework.boot")
 }
 
 android {
@@ -44,7 +45,7 @@ android {
     }
     packaging {
         resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/*"
         }
     }
 }
@@ -75,4 +76,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.1")
+    implementation ("com.squareup.okhttp3:okhttp:4.9.1")
+    implementation ("org.springframework.boot:spring-boot-starter-web:2.5.4")
 }

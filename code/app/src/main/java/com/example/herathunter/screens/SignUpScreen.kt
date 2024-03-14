@@ -44,7 +44,7 @@ fun SignUpScreen() {
                 painterResource(id = R.drawable.icon)
                 )
             MyTextFieldComponent(
-                labelValue= stringResource(id = R.string.last_name),
+                labelValue= stringResource(id = R.string.date_of_birth),
                 painterResource(id = R.drawable.icon)
             )
             MyTextFieldComponent(

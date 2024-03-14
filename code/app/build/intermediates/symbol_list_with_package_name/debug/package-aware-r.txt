@@ -122,7 +122,11 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable photo1
+drawable pic
+drawable pic2
+drawable pic3
 drawable pic4
+drawable pic5
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -252,6 +256,7 @@ string close_sheet
 string collapsed
 string common_google_play_services_unknown_issue
 string create_account
+string date_of_birth
 string default_error_message
 string default_popup_window_title
 string dialog
@@ -264,7 +269,6 @@ string hello
 string hide_password
 string in_progress
 string indeterminate
-string last_name
 string login
 string navigation_menu
 string not_selected

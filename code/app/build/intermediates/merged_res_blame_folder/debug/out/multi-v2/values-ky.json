@@ -1,44 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.herathunter.app-mergeDebugResources-2:/values-ky/values-ky.xml",
+            "outputFile": "com.example.herathunter.app-mergeDebugResources-54:/values-ky/values-ky.xml",
             "map": [
                 {
-                    "source": "D:\\3term\\rubbish\\.gradle\\caches\\transforms-3\\9cc0b765caf38179c734d10b72e03aed\\transformed\\material3-1.0.0\\res\\values-ky\\values-ky.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,136,208",
-                        "endColumns": "80,71,85",
-                        "endOffsets": "131,203,289"
-                    },
-                    "to": {
-                        "startLines": "11,15,17",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "1013,1462,1619",
-                        "endColumns": "80,71,85",
-                        "endOffsets": "1089,1529,1700"
-                    }
-                },
-                {
-                    "source": "D:\\3term\\rubbish\\.gradle\\caches\\transforms-3\\3931ad7eb9dd4136015071a12e5891dc\\transformed\\core-1.10.0\\res\\values-ky\\values-ky.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,155,257,360,467,571,675,786",
-                        "endColumns": "99,101,102,106,103,103,110,100",
-                        "endOffsets": "150,252,355,462,566,670,781,882"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,27",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,205,307,410,517,621,725,2437",
-                        "endColumns": "99,101,102,106,103,103,110,100",
-                        "endOffsets": "200,302,405,512,616,720,831,2533"
-                    }
-                },
-                {
-                    "source": "D:\\3term\\rubbish\\.gradle\\caches\\transforms-3\\4e65baf4d80f4746ced8f93796831b0f\\transformed\\ui-release\\res\\values-ky\\values-ky.xml",
+                    "source": "C:\\Users\\dimon\\.gradle\\caches\\transforms-3\\ba99b767b43ffb093becd8b695571447\\transformed\\ui-release\\res\\values-ky\\values-ky.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "D:\\3term\\rubbish\\.gradle\\caches\\transforms-3\\3cd826bf5950243f3f3f45afac62b482\\transformed\\play-services-basement-18.1.0\\res\\values-ky\\values.xml",
+                    "source": "C:\\Users\\dimon\\.gradle\\caches\\transforms-3\\72bfb15e90f91d3f5c818ec87603ddde\\transformed\\core-1.10.0\\res\\values-ky\\values-ky.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,155,257,360,467,571,675,786",
+                        "endColumns": "99,101,102,106,103,103,110,100",
+                        "endOffsets": "150,252,355,462,566,670,781,882"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,27",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,205,307,410,517,621,725,2437",
+                        "endColumns": "99,101,102,106,103,103,110,100",
+                        "endOffsets": "200,302,405,512,616,720,831,2533"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dimon\\.gradle\\caches\\transforms-3\\1e30c413a529b1c1442ddf535b264ae0\\transformed\\play-services-basement-18.1.0\\res\\values-ky\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -69,6 +52,23 @@
                         "startOffsets": "1094",
                         "endColumns": "157",
                         "endOffsets": "1247"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dimon\\.gradle\\caches\\transforms-3\\49b87796db2c167dcf2f21f259f13c22\\transformed\\material3-1.0.0\\res\\values-ky\\values-ky.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,136,208",
+                        "endColumns": "80,71,85",
+                        "endOffsets": "131,203,289"
+                    },
+                    "to": {
+                        "startLines": "11,15,17",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1013,1462,1619",
+                        "endColumns": "80,71,85",
+                        "endOffsets": "1089,1529,1700"
                     }
                 }
             ]

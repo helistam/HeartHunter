@@ -9,7 +9,9 @@ import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import okhttp3.Response
 import org.springframework.stereotype.Service
+import java.io.ByteArrayInputStream
 import java.sql.Connection
+
 
 @Service
 class AppService {
@@ -35,7 +37,7 @@ class AppService {
         val body = json.toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull())
 
         val request = Request.Builder()
-            .url("jdbc:mysql://localhost:3306/user")
+            .url("jdbc:mysql://192.168.56.1:3306/user")
             .post(body)
             .build()
 
@@ -50,9 +52,9 @@ class AppService {
 //            TODO() Handle the error
         }
     }
-    fun getUserById(id: Int){
+    fun getUser(id: Int){
         val request = Request.Builder()
-            .url("jdbc:mysql://localhost:3306/user/$id")
+            .url("jdbc:mysql://192.168.56.1:3306/user")
             .build()
 
         val response: Response = client.newCall(request).execute()

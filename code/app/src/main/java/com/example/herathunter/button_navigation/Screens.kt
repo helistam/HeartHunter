@@ -60,8 +60,9 @@ fun Screen1() {
             .background(Color.White)
             .padding(28.dp)
     ){
-        val photos = listOf(R.drawable.photo1, R.drawable.pic4, R.drawable.photo1,R.drawable.pic4)
-        val names=listOf("NEGR1 возраст негра \n Описние негра ","Ne Negr", "Negr2", "Ne Negr2")
+        val photos = listOf(R.drawable.pic, R.drawable.pic2, R.drawable.pic3,R.drawable.pic4,R.drawable.pic5)
+        val names=listOf("Jane 20 \n NOT funny ","Jhon 29 \n Funny ", "Misha 58 \nNOT Serious","Kate 18 \n Serious ", "Sara 29 \n Funny ")
+
         SwipeablePhotos(photos,names)
         //SwipeablePictureScreen(photos)
     }
@@ -169,10 +170,8 @@ fun SwipeablePhotos(photos: List<Int>, names: List<String>) {
                 contentDescription = null,
                 modifier = Modifier
                     .fillMaxSize()
-                    .height(300.dp)
-                    .background(MaterialTheme.colorScheme.primary)
                     .offset(x = offsetX.dp),
-                contentScale = ContentScale.FillBounds
+                contentScale = ContentScale.Crop
             )
             Box(
                 modifier = Modifier
@@ -405,7 +404,7 @@ private fun ListItem(name: String,surname:String,onClick:()->Unit)
                 )
                 Column(modifier= Modifier.padding(start=16.dp)){//элементы по вертикали
                     androidx.compose.material3.Text(name+"  "+surname)
-                    androidx.compose.material3.Text("Privios message")
+                    androidx.compose.material3.Text("Previous message")
                 }
             }
         }

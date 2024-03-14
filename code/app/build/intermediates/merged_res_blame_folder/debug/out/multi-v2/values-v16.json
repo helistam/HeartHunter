@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.herathunter.app-mergeDebugResources-2:/values-v16/values-v16.xml",
+            "outputFile": "com.example.herathunter.app-mergeDebugResources-54:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "D:\\3term\\rubbish\\.gradle\\caches\\transforms-3\\3931ad7eb9dd4136015071a12e5891dc\\transformed\\core-1.10.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\dimon\\.gradle\\caches\\transforms-3\\72bfb15e90f91d3f5c818ec87603ddde\\transformed\\core-1.10.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

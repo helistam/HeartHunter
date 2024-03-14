@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.herathunter.app-mergeDebugResources-2:/values-vi/values-vi.xml",
+            "outputFile": "com.example.herathunter.app-mergeDebugResources-54:/values-vi/values-vi.xml",
             "map": [
                 {
-                    "source": "D:\\3term\\rubbish\\.gradle\\caches\\transforms-3\\9cc0b765caf38179c734d10b72e03aed\\transformed\\material3-1.0.0\\res\\values-vi\\values-vi.xml",
+                    "source": "C:\\Users\\dimon\\.gradle\\caches\\transforms-3\\49b87796db2c167dcf2f21f259f13c22\\transformed\\material3-1.0.0\\res\\values-vi\\values-vi.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\3term\\rubbish\\.gradle\\caches\\transforms-3\\3cd826bf5950243f3f3f45afac62b482\\transformed\\play-services-basement-18.1.0\\res\\values-vi\\values.xml",
+                    "source": "C:\\Users\\dimon\\.gradle\\caches\\transforms-3\\1e30c413a529b1c1442ddf535b264ae0\\transformed\\play-services-basement-18.1.0\\res\\values-vi\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "D:\\3term\\rubbish\\.gradle\\caches\\transforms-3\\3931ad7eb9dd4136015071a12e5891dc\\transformed\\core-1.10.0\\res\\values-vi\\values-vi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,152,254,353,453,556,669,785",
-                        "endColumns": "96,101,98,99,102,112,115,100",
-                        "endOffsets": "147,249,348,448,551,664,780,881"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,27",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,202,304,403,503,606,719,2421",
-                        "endColumns": "96,101,98,99,102,112,115,100",
-                        "endOffsets": "197,299,398,498,601,714,830,2517"
-                    }
-                },
-                {
-                    "source": "D:\\3term\\rubbish\\.gradle\\caches\\transforms-3\\4e65baf4d80f4746ced8f93796831b0f\\transformed\\ui-release\\res\\values-vi\\values-vi.xml",
+                    "source": "C:\\Users\\dimon\\.gradle\\caches\\transforms-3\\ba99b767b43ffb093becd8b695571447\\transformed\\ui-release\\res\\values-vi\\values-vi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "835,931,1224,1330,1505,1675,1760,1853,1947,2028,2098,2168,2258,2349,2522,2599,2665",
                         "endColumns": "95,85,105,99,91,84,92,93,80,69,69,89,90,71,76,65,113",
                         "endOffsets": "926,1012,1325,1425,1592,1755,1848,1942,2023,2093,2163,2253,2344,2416,2594,2660,2774"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dimon\\.gradle\\caches\\transforms-3\\72bfb15e90f91d3f5c818ec87603ddde\\transformed\\core-1.10.0\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,353,453,556,669,785",
+                        "endColumns": "96,101,98,99,102,112,115,100",
+                        "endOffsets": "147,249,348,448,551,664,780,881"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,27",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,202,304,403,503,606,719,2421",
+                        "endColumns": "96,101,98,99,102,112,115,100",
+                        "endOffsets": "197,299,398,498,601,714,830,2517"
                     }
                 }
             ]
