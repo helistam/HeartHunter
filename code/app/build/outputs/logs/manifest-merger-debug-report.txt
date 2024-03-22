@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:2:1-28:12
-INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [androidx.navigation:navigation-compose:2.5.3] C:\Users\dimon\.gradle\caches\transforms-3\641347c2ccc2fe0faaa262f439f95dca\transformed\navigation-compose-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.3] C:\Users\dimon\.gradle\caches\transforms-3\a8f78cd25cde9e06f6a46b8677ec4468\transformed\navigation-runtime-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\dimon\.gradle\caches\transforms-3\a5e5ddf7602cda397cec85a8d323e821\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:17:1-24:12
@@ -89,9 +89,13 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\dimon\.gradle\caches\transform
 		INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:5:5-26:19
-INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:5:5-26:19
+ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:6:5-29:19
+INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:6:5-29:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.5.2] C:\Users\dimon\.gradle\caches\transforms-3\02cc8303d25e213f6a84ca5864f2eb39\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.5.2] C:\Users\dimon\.gradle\caches\transforms-3\02cc8303d25e213f6a84ca5864f2eb39\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.5.2] C:\Users\dimon\.gradle\caches\transforms-3\8ea122d8029f279dc9d3441a2561709d\transformed\ui-test-manifest-1.5.2\AndroidManifest.xml:22:5-26:19
@@ -121,43 +125,45 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\dimon\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.0] C:\Users\dimon\.gradle\caches\transforms-3\72bfb15e90f91d3f5c818ec87603ddde\transformed\core-1.10.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:13:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:8:9-54
-	android:roundIcon
 		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:11:9-54
+	android:roundIcon
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:14:9-54
 	tools:targetApi
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:17:9-29
 	android:icon
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:13:9-49
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:16:9-49
 	android:dataExtractionRules
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:10:9-65
+	android:usesCleartextTraffic
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:8:9-44
 activity#com.example.herathunter.MainActivity
-ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:15:9-25:20
+ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:18:9-28:20
 	android:label
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:21:13-45
 	android:exported
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:20:13-36
 	android:theme
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:19:13-53
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:22:13-53
 	android:name
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:16:13-41
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml:26:27-74
 uses-sdk
 INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\dimon\HeartHunter\code\app\src\main\AndroidManifest.xml

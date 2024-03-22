@@ -30,6 +30,7 @@ import com.example.herathunter.screens.SignUpScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.e("my","start gui")
         super.onCreate(savedInstanceState)
         setContent {
            /* LazyColumn (){//элементы во время скрола остаются на том же месте
@@ -37,7 +38,10 @@ class MainActivity : ComponentActivity() {
                    ListItem("Name","Surname")
                }
             }*/
+
+            Log.e("my","start gui")
             PostOfficeApp()
+
             //MainScreen()
 
         }

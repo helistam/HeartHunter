@@ -29,6 +29,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -55,9 +56,14 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.herathunter.R
+import com.example.herathunter.models.MyViewModel
+import com.example.herathunter.models.User
 import com.example.herathunter.screens.PostOfficeAppRouter
 import com.example.herathunter.screens.Screen
+import com.example.herathunter.services.AppService
 import java.nio.file.WatchEvent
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
 
 @Composable
 fun NormalTextComponent(value:String){
@@ -93,7 +99,7 @@ fun HeadingTextComponent(value:String){
 }
 
 @Composable
-fun MyTextFieldComponent(labelValue: String,painterResource:Painter){
+fun MyTextFieldComponent(labelValue: String,painterResource:Painter): MutableState<String> {
 
     val textValue= remember{
          mutableStateOf("")
@@ -122,10 +128,11 @@ fun MyTextFieldComponent(labelValue: String,painterResource:Painter){
             Icon(painter = painterResource, contentDescription ="" )
         }
     )
+    return textValue
 }
 
 @Composable
-fun PasswordTextFieldComponent(labelValue: String,painterResource:Painter){
+fun PasswordTextFieldComponent(labelValue: String,painterResource:Painter): MutableState<String>{
 
     val localFocusManager= LocalFocusManager.current
     val password= remember{
@@ -179,6 +186,7 @@ fun PasswordTextFieldComponent(labelValue: String,painterResource:Painter){
         },
         visualTransformation = if(passwordVisible.value) VisualTransformation.None else PasswordVisualTransformation()
     )
+    return password
 }
 
 @Composable
@@ -244,8 +252,14 @@ fun PhotoButton(value: String){
     }
 }
 @Composable
-fun ButtonComponent(value: String){
-    Button(onClick = { PostOfficeAppRouter.navigateTo(Screen.MainScreen)},
+fun ButtonComponent(value: String, user:User){
+    Button(onClick = {
+
+        Log.e("my","button")
+        MyViewModel.postUser(user)
+        //AppService.postUser(user)
+        PostOfficeAppRouter.navigateTo(Screen.MainScreen)
+                     },
         modifier= Modifier
             .fillMaxWidth()
             .heightIn(48.dp),
@@ -275,6 +289,7 @@ fun ButtonComponent(value: String){
         }
     }
 }
+
 
 @Composable
 fun DividerTextComponent(){

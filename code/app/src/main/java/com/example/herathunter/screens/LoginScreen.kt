@@ -24,6 +24,7 @@ import com.example.herathunter.components.HeadingTextComponent
 import com.example.herathunter.components.MyTextFieldComponent
 import com.example.herathunter.components.NormalTextComponent
 import com.example.herathunter.components.PasswordTextFieldComponent
+import com.example.herathunter.models.User
 
 @Composable
 fun LoginScreen(){
@@ -46,7 +47,12 @@ fun LoginScreen(){
                 painterResource(id = R.drawable.lock)
             )
             Spacer(modifier = Modifier.height(80.dp))
-            ButtonComponent(value = stringResource(id = R.string.login))
+
+            ButtonComponent(value = stringResource(id = R.string.login), user = User(2,"emailState.toString()","passwordState.toString()","firstNameState.toString()","dateOfBirthState.toString()","","","male","Minsk",
+            confirmed = false,
+            available = true
+            )
+            )
             Spacer(modifier = Modifier.height(20.dp))
             DividerTextComponent()
 

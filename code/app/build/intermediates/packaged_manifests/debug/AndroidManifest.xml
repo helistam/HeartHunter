@@ -8,6 +8,8 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="33" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <queries>
         <package android:name="com.android.vending" />
         <package android:name="com.google.android.engage.verifyapp" />
@@ -36,7 +38,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.HeratHunter" >
+        android:theme="@style/Theme.HeratHunter"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="com.example.herathunter.MainActivity"
             android:exported="true"
