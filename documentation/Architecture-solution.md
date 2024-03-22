@@ -14,7 +14,7 @@
 2) Отсутствие необходимости в масштабировании приложения,  
 3) Вся функциональность и слои приложения, кроме функциональности хранения данных, располагаются на одном сервере.
 
-![Структурная схема приложения на основе функциональных блоков](https://github.com/helistam/HeartHunter/blob/main/documentation/files/schema.png)
+![Структурная схема приложения на основе функциональных блоков](https://github.com/helistam/HeartHunter/blob/main/documentation/files/unallocated_deployment.png)
 
 ### 1.3 Обоснование выбора технологий 
 1.Язык написания приложения: 
@@ -51,7 +51,7 @@
 
 ### 1.6 Структурная схема приложения на основе функциональных блоков
 
-![Структурная схема приложения на основе функциональных блоков](https://github.com/helistam/HeartHunter/blob/main/documentation/files/unallocated_deployment.png)
+![Структурная схема приложения на основе функциональных блоков](https://github.com/helistam/HeartHunter/blob/main/documentation/files/schema.png)
 
 
 ### 2.1 Архитектура As Is
