@@ -14,8 +14,10 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable city
 drawable dheart
 drawable emails
+drawable gender
 drawable heart
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -33,10 +35,12 @@ mipmap email_round
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string city
 string create_account
 string date_of_birth
 string email
 string first_name
+string gender
 string go_to_login
 string hello
 string hide_password

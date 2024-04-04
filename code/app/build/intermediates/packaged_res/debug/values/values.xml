@@ -15,10 +15,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">HeratHunter</string>
+    <string name="city">City</string>
     <string name="create_account">Create an Account</string>
     <string name="date_of_birth">Date of birth</string>
     <string name="email">Email</string>
     <string name="first_name">First Name</string>
+    <string name="gender">Gender</string>
     <string name="go_to_login">Already have an account? Login</string>
     <string name="hello">Hey there</string>
     <string name="hide_password">Hide  password</string>

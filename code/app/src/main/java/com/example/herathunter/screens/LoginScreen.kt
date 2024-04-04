@@ -38,19 +38,17 @@ fun LoginScreen(){
         Column(modifier = Modifier.fillMaxSize()) {
             NormalTextComponent(value = stringResource(id = R.string.login))
             HeadingTextComponent(value = stringResource(id=R.string.welcome))
-            MyTextFieldComponent(
+            val emailState = MyTextFieldComponent(
                 labelValue= stringResource(id = R.string.email),
                 painterResource(id = R.drawable.emails)
             )
-            PasswordTextFieldComponent(
+            val passwordState = PasswordTextFieldComponent(
                 labelValue= stringResource(id = R.string.password),
                 painterResource(id = R.drawable.lock)
             )
             Spacer(modifier = Modifier.height(80.dp))
 
-            ButtonComponent(value = stringResource(id = R.string.login), user = User(2,"emailState.toString()","passwordState.toString()","firstNameState.toString()","dateOfBirthState.toString()","","","male","Minsk",
-            confirmed = false,
-            available = true
+            ButtonComponent(value = stringResource(id = R.string.login), user = User(2,"","","","","","","","", confirmed = false, available = true
             )
             )
             Spacer(modifier = Modifier.height(20.dp))

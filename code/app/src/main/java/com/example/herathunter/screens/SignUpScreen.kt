@@ -54,12 +54,24 @@ fun SignUpScreen() {
             Log.e("my","sign2")
             val dateOfBirthState = MyTextFieldComponent(
                 labelValue= stringResource(id = R.string.date_of_birth),
-                painterResource(id = R.drawable.icon)
+                painterResource(id = R.drawable.date)
             )
             val emailState = MyTextFieldComponent(
                 labelValue= stringResource(id = R.string.email),
                 painterResource(id = R.drawable.emails)
             )
+
+
+            val genderState = MyTextFieldComponent(
+                labelValue= stringResource(id = R.string.gender),
+                painterResource(id = R.drawable.gender)
+            )
+            val cityState = MyTextFieldComponent(
+                labelValue= stringResource(id = R.string.city),
+                painterResource(id = R.drawable.city)
+            )
+
+
             val passwordState = PasswordTextFieldComponent(
                 labelValue= stringResource(id = R.string.password),
                 painterResource(id = R.drawable.lock)
@@ -70,7 +82,14 @@ fun SignUpScreen() {
             CheckboxComponent(value = stringResource(id =R.string.terms_and_conditions ) )
             
             Spacer(modifier = Modifier.height(80.dp))
-            val user = User(2,emailState.value,passwordState.value,firstNameState.value,dateOfBirthState.value,"","","male","Minsk",
+            val user = User(2,
+                emailState.value,
+                passwordState.value,
+                firstNameState.value,
+                dateOfBirthState.value,
+                "",
+                "",genderState.value,
+                cityState.value,
                 confirmed = false,
                 available = true
             )
