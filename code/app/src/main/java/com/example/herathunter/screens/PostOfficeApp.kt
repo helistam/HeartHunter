@@ -7,10 +7,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import MainScreen
+import Theme
 import android.util.Log
 
 @Composable
-fun PostOfficeApp() {
+fun PostOfficeApp(currentTheme: Theme, onThemeChange: (Theme) -> Unit)
+ {
 
     Surface(
         modifier = Modifier.fillMaxSize(),
@@ -26,10 +28,12 @@ fun PostOfficeApp() {
                     LoginScreen()
                 }
                 is Screen.MainScreen->{
-                    MainScreen()
+                    MainScreen(currentTheme) { newTheme ->
+                        onThemeChange(newTheme)
+                    }
                 }
 
-           }
+                }
         }
     }
 }

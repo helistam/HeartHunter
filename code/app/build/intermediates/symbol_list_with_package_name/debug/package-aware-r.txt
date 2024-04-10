@@ -96,6 +96,7 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 drawable city
+drawable date
 drawable dheart
 drawable emails
 drawable gender

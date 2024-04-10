@@ -4,10 +4,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 @Composable
-fun NavGraph(
-    navHostController: NavHostController
-) {
-    NavHost(navController = navHostController, startDestination = "screen_1"){
+fun NavGraph(navHostController: NavHostController, currentTheme: Theme, onThemeChange: (Theme) -> Unit)
+{NavHost(navController = navHostController, startDestination = "screen_1"){
+
         composable("screen_1"){
             Screen1()
         }
@@ -23,8 +22,12 @@ fun NavGraph(
             }
         }
         composable("screen_4"){
-            Screen4()
+            //Screen4()
+            Screen4(currentTheme) { newTheme ->
+                onThemeChange(newTheme)
+            }
         }
+
         composable("screen_5"){
             Screen5(){
                 navHostController.navigate("screen_3")//срабатывает на onClicked

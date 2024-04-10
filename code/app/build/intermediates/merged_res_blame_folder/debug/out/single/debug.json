@@ -8,10 +8,6 @@
         "source": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-58:\\drawable\\pic5.png"
     },
     {
-        "merged": "com.example.herathunter.app-merged_res-56:/drawable_gender.xml.flat",
-        "source": "com.example.herathunter.app-main-58:/drawable/gender.xml"
-    },
-    {
         "merged": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-56:\\drawable_photo1.jpg.flat",
         "source": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-58:\\drawable\\photo1.jpg"
     },
@@ -56,8 +52,16 @@
         "source": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-58:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.example.herathunter.app-merged_res-56:/drawable_date.xml.flat",
+        "source": "com.example.herathunter.app-main-58:/drawable/date.xml"
+    },
+    {
         "merged": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-56:\\drawable_dheart.png.flat",
         "source": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-58:\\drawable\\dheart.png"
+    },
+    {
+        "merged": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-56:\\drawable_gender.xml.flat",
+        "source": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-58:\\drawable\\gender.xml"
     },
     {
         "merged": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-56:\\drawable_icon2.xml.flat",
@@ -144,16 +148,16 @@
         "source": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-58:\\drawable\\pic4.jpg"
     },
     {
+        "merged": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-56:\\drawable_city.xml.flat",
+        "source": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-58:\\drawable\\city.xml"
+    },
+    {
         "merged": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-56:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-58:\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-56:\\mipmap-xxxhdpi_email_round.webp.flat",
         "source": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-main-58:\\mipmap-xxxhdpi\\email_round.webp"
-    },
-    {
-        "merged": "com.example.herathunter.app-merged_res-56:/drawable_city.xml.flat",
-        "source": "com.example.herathunter.app-main-58:/drawable/city.xml"
     },
     {
         "merged": "C:\\Users\\dimon\\.gradle\\daemon\\8.0\\com.example.herathunter.app-merged_res-56:\\mipmap-xhdpi_ic_launcher_round.webp.flat",

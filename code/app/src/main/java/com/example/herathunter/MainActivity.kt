@@ -26,7 +26,13 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.herathunter.screens.LoginScreen
 import com.example.herathunter.screens.PostOfficeApp
-import com.example.herathunter.screens.SignUpScreen
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.lightColorScheme
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +46,18 @@ class MainActivity : ComponentActivity() {
             }*/
 
             Log.e("my","start gui")
-            PostOfficeApp()
+            //PostOfficeApp()
+            var currentTheme by remember { mutableStateOf(Theme.Light) }
+            Log.d("MyLog", "Current theme: $currentTheme")
+            MaterialTheme(
+                colorScheme = if (currentTheme == Theme.Light) lightColorScheme() else darkColorScheme(),
+                content = {
+                    PostOfficeApp(currentTheme) { newTheme ->
+                        Log.d("MyLog", "New theme: $newTheme")
+                        currentTheme = newTheme
+                    }
+                }
+            )
 
             //MainScreen()
 

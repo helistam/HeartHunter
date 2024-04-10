@@ -288,43 +288,94 @@ fun Screen3(onClick:()->Unit) {
 
 }
 @Composable
-fun Screen4() {
-    YourProfile()
+fun Screen4(currentTheme: Theme, onThemeChange: (Theme) -> Unit) {
+    YourProfile(currentTheme)
+    //дальше новое
+    Column(
+        horizontalAlignment = Alignment.End,
+        verticalArrangement = Arrangement.Bottom,
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(bottom = 312.dp, end = 15.dp)
+    ) {
+        Button(
+            onClick = {
+                val newTheme = if (currentTheme == Theme.Light) Theme.Dark else Theme.Light
+                onThemeChange(newTheme)
+            },
+            modifier = Modifier.widthIn(max = 200.dp),
+            border = BorderStroke(3.dp, Color.DarkGray)
+        ) {
+            Text(
+                text = if (currentTheme == Theme.Light) "Switch to Dark Mode" else "Switch to Light Mode",
+                fontSize = 20.sp,
+                textAlign = TextAlign.Center, // Выравнивание текста по центру
+                modifier = Modifier.padding(5.dp) // Отступы вокруг текста
+            )
+        }
+    }
+
 }
+
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun YourProfile()
+fun YourProfile(currentTheme: Theme)
 {
+
+    Text(
+        "Profile",
+        color = Color.Red,
+        fontSize = 30.sp,
+        textAlign = TextAlign.Center,
+        fontWeight= FontWeight.Bold,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 20.dp, vertical = 10.dp) // Уменьшил вертикальный отступ
+    )
+
     Row( modifier = Modifier
         .fillMaxWidth()
-        .padding(20.dp)//отступ
+        .padding(horizontal = 20.dp,vertical = 60.dp)//отступ
     ) {
-        Image (
+        val textColor = if (currentTheme == Theme.Light) Color.Black else Color.White
+        Text("Name Surname", color = textColor,fontSize = 30.sp, modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 10.dp, vertical = 20.dp))
+    }
+    Row( modifier = Modifier
+        .fillMaxWidth()
+        .padding(horizontal = 30.dp, vertical = 140.dp)
+    ) {
+        val email = remember{mutableStateOf("")}
+        val placeHolderColor = if (currentTheme == Theme.Light) Color.Black else Color.White
+        Image(
             painter = painterResource(id = R.drawable.photo1),
             contentDescription = null, // Provide a description if needed for accessibility
-            contentScale= ContentScale.Crop,//обрезать картинку если не влазит
+            contentScale = ContentScale.Crop,//обрезать картинку если не влазит
             modifier = Modifier
-                .size(100.dp)
+                .size(130.dp)
                 .clip(CircleShape)// круглая форма
         )
-        Text("Name Surname",fontSize = 30.sp, modifier = Modifier
-            .fillMaxWidth()
-            .padding(20.dp))
+        OutlinedTextField(
+            value = email.value,
+            onValueChange = { email.value = it },
+            placeholder = { Text(text = "Tell the world a few words about yourself",color = placeHolderColor) }, // Плэйсхолдер
+            textStyle = TextStyle(fontSize = 16.sp),
+            modifier = Modifier.fillMaxWidth().height(120.dp).padding(start = 16.dp)
+        )
     }
     Box(modifier = Modifier
         .fillMaxSize()
-        .padding(top = 120.dp),contentAlignment = Alignment.TopCenter){
-
+        .padding(top = 260.dp),contentAlignment = Alignment.TopCenter){
+        val placeHolderColor = if (currentTheme == Theme.Light) Color.Black else Color.White
         val email = remember{mutableStateOf("")}
         Column(modifier=Modifier.padding(20.dp)) {
-            TextField(
+            OutlinedTextField(
                 value = email.value,
-                onValueChange = {
-                    // Заменяем пробелы на пустую строку
-                    val newValue = it.replace("\\s".toRegex(), "")
-                    email.value = newValue
-                },
-                textStyle = TextStyle(fontSize =  28.sp),
-                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
+                onValueChange = { email.value = it },
+                placeholder = { Text(text = "Share a glimplse of you! Briefly describe yourself and make your profile stand out",color = placeHolderColor) }, // Плэйсхолдер
+                textStyle = TextStyle(fontSize = 16.sp),
+                modifier = Modifier.fillMaxWidth().height(120.dp).padding(start = 16.dp)
             )
 
             Spacer(modifier = Modifier.height(16.dp)) // Добавляем пространство между элементами
@@ -333,15 +384,10 @@ fun YourProfile()
                     onClick = {},
                     border = BorderStroke(3.dp, Color.DarkGray)
                 ) {
-                    Text("Edit profile", fontSize = 20.sp)
+                    Text("Edit profile", fontSize = 20.sp, modifier = Modifier.padding(vertical = 17.dp, horizontal = 10.dp))
                 }
                 Spacer(modifier = Modifier.width(16.dp)) // Добавляем пространство между кнопками
-                Button(
-                    onClick = {},
-                    border = BorderStroke(3.dp, Color.DarkGray)
-                ) {
-                    Text("Settings", fontSize = 20.sp)
-                }
+
             }
         }
     }
